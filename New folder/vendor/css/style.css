@@ -6650,7 +6650,6 @@ textarea.form-control.is-invalid, textarea.form-control.parsley-error {
 
 .table.table-clean th, .table.table-clean td {
   padding: 7px 20px !important; }
-
 .toast {
   background-color: rgba(255, 255, 255, 0.95);
   border-color: rgba(28, 39, 60, 0.16);
@@ -7319,8 +7318,17 @@ textarea.form-control.is-invalid, textarea.form-control.parsley-error {
     border-left: 3px solid rgba(240, 242, 247, 0.4); }
 
 .tabs-style-1 .panel-tabs {
-  border-bottom: 1px solid #e0e6ed; }
-
+    border-bottom: 1px solid #e0e6ed;
+    display: flex;
+    justify-content: space-between;
+}
+#accuracy .card{
+  width: 567px;
+  margin: 0 auto;
+}
+#accuracy .card .form-group img{
+  width: 200px;
+}
 .tabs-style-1 .main-nav-line .nav-link.active {
   color: #242f48;
   border: 1px solid;
