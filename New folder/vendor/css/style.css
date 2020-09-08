@@ -7329,6 +7329,22 @@ textarea.form-control.is-invalid, textarea.form-control.parsley-error {
 #accuracy .card .form-group img{
   width: 200px;
 }
+#modal-make-camp .form-control{
+  height: 40px;
+}
+#modal-make-camp .form-group input{
+  margin-bottom: 10px;
+}
+#modal-make-camp .modal-header, #modal-make-camp .modal-body, #modal-make-camp .modal-footer{
+  padding: 1rem 30px;
+}
+@media (min-width: 576px){
+  .modal-dialog {
+    max-width: 80%;
+    margin: 1.75rem auto;
+}
+}
+
 .tabs-style-1 .main-nav-line .nav-link.active {
   color: #242f48;
   border: 1px solid;
