@@ -7323,7 +7323,7 @@ textarea.form-control.is-invalid, textarea.form-control.parsley-error {
     justify-content: space-between;
 }
 #accuracy .card{
-  width: 567px;
+  width: 52%;
   margin: 0 auto;
 }
 #accuracy .card .form-group img{
@@ -7338,13 +7338,42 @@ textarea.form-control.is-invalid, textarea.form-control.parsley-error {
 #modal-make-camp .modal-header, #modal-make-camp .modal-body, #modal-make-camp .modal-footer{
   padding: 1rem 30px;
 }
+#modal-make-camp .modal-body form{
+  width: 60%; 
+  float: left;
+}
+#modal-make-camp .modal-body .note{
+  width: 38%; 
+  float: left; 
+  margin: 10px 0 10px 2%;
+  background: #fef1f3; 
+  padding: 15px; 
+  font-size: 14px;
+  line-height: 25px;
+}
+#modal-make-camp .modal-footer{
+  justify-content: center;
+}
+@media (max-width: 992px){
+  #modal-make-camp .modal-body form{
+    width: 100%; 
+  }
+  #modal-make-camp .modal-body .note{
+    width: 100%; 
+    margin: 10px 0; 
+  }
+}
 @media (min-width: 576px){
   .modal-dialog {
     max-width: 80%;
     margin: 1.75rem auto;
+  }
 }
+@media (max-width: 576px){
+  #accuracy .card {
+    width: 100%;
+  }
 }
-
 .tabs-style-1 .main-nav-line .nav-link.active {
   color: #242f48;
   border: 1px solid;
