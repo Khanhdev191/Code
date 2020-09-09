@@ -3051,7 +3051,6 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none; }
-
 /* ###### 3.3 Buttons ###### */
 .btn, .sp-container button {
   border-width: 0;
@@ -7355,6 +7354,49 @@ textarea.form-control.is-invalid, textarea.form-control.parsley-error {
 }
 #modal-make-camp .modal-footer{
   justify-content: center;
+  
+}
+#resource .tools button{
+  padding: 5px 15px;
+}
+#resource .tools button:last-child{
+  padding: 5px 20px;
+}
+#resource tbody td{
+  line-height: 30px;
+}
+#resource .form-control {
+  width: 125px;
+  display: inline;
+  margin-left: 10px;
+  height: 35px;
+}
+#resource .form-group {
+  float: left;
+  margin-bottom: 0;
+  width: 50%;
+}
+#modal-resource .card-body {
+  padding-top: 0;
+}
+#modal-resource .form-control {
+  height: 40px;
+}
+#modal-resource .form-control textarea {
+  height: 100px;
+}
+#modal-resource .form-body h5{
+  color: #999;
+  text-transform: none;
+  font-size: 14px;
+  font-weight: normal;
+}
+#modal-resource .form-body h6{
+  text-transform: none;
+  font-weight: normal;
+}
+#modal-resource{
+  font-size: 14px;
 }
 @media (max-width: 992px){
   #modal-make-camp .modal-body form{
