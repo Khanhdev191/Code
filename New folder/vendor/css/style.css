@@ -7322,7 +7322,9 @@ textarea.form-control.is-invalid, textarea.form-control.parsley-error {
     display: flex;
     justify-content: space-between;
 }
-#accuracy .card{
+#accuracy .card,
+#settings .card,
+#profile .card{
   width: 52%;
   margin: 0 auto;
 }
@@ -7363,14 +7365,16 @@ textarea.form-control.is-invalid, textarea.form-control.parsley-error {
     margin: 10px 0; 
   }
 }
-@media (min-width: 576px){
+@media (min-width: 576px) {
   .modal-dialog {
     max-width: 80%;
     margin: 1.75rem auto;
   }
 }
-@media (max-width: 576px){
-  #accuracy .card {
+@media (max-width: 576px) {
+  #accuracy .card,
+  #settings .card,
+  #profile .card {
     width: 100%;
   }
 }

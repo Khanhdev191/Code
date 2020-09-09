@@ -362,182 +362,184 @@
 								<div class="tab-content border-left border-bottom border-right border-top-0 p-4">
 									<div class="tab-pane active" id="profile">
 										<div class="mb-4 main-content-label">THÔNG TIN CÁ NHÂN</div>
-										<form class="form-horizontal" enctype="multipart/form-data" id="myProfile"
-											method="post" action="https://timebeats.com/dashboard/profile">
-											<input type="hidden" name="_token"
-												value="9CRxmKLNzjSPgU2OMwZGPGlU7RxqFNbzOhafUgRJ">
-											<div class="form-group ">
-												<div class="row">
+										<div class="card card-body pd-20 pd-md-40 border shadow-none">
+											<form class="form-horizontal" enctype="multipart/form-data" id="myProfile"
+												method="post" action="https://timebeats.com/dashboard/profile">
+												<input type="hidden" name="_token"
+													value="9CRxmKLNzjSPgU2OMwZGPGlU7RxqFNbzOhafUgRJ">
+												<div class="form-group ">
+													<div class="row">
 
-													<div class="col-md-12">
-														<div class="main-img-user profile-user"
-															style="width: 120px; height: 120px; margin-bottom: 20px">
-															<img alt="" src="./vendor/img/photos/user.png"
-																id="profileImg"><a class="fas fa-camera profile-edit"
-																href="JavaScript:void(0);"></a>
-															<input type="file" id="inputImg" name="avatar"
-																style="display: none;">
+														<div class="col-md-12">
+															<div class="main-img-user profile-user"
+																style="width: 120px; height: 120px; margin-bottom: 20px">
+																<img alt="" src="./vendor/img/photos/user.png"
+																	id="profileImg"><a class="fas fa-camera profile-edit"
+																	href="JavaScript:void(0);"></a>
+																<input type="file" id="inputImg" name="avatar"
+																	style="display: none;">
+															</div>
 														</div>
 													</div>
 												</div>
-											</div>
-											<div class="form-group ">
-												<div class="row">
+												<div class="form-group ">
+													<div class="row">
 
-													<div class="col-md-12">
-														<input type="text" class="form-control" name="full_name"
-															placeholder="Họ Và Tên" value="">
+														<div class="col-md-12">
+															<input type="text" class="form-control" name="full_name"
+																placeholder="Họ Và Tên" value="">
+														</div>
+														
 													</div>
-													
-												</div>
-											</div>
-											
-											<div class="form-group ">
-												<div class="row">
-
-													<div class="col-md-12">
-														<select name="gender" class="form-control select2">
-															<option selected value="0">Nam</option>
-															<option value="1">Nữ</option>
-															<option value="2">Khác</option>
-														</select>
-													</div>
-												</div>
-											</div>
-											<div class="form-group ">
-												<div class="row">
-
-													<div class="col-md-12">
-														<div class="row row-sm mg-b-20">
-															<div class="input-group col-md-4">
-																<div class="input-group-prepend">
-																	<div class="input-group-text">
-																		<i class="fas fa-calendar-alt"></i>
-
-
-																	</div>
-																</div>
-
-																<input class="form-control fc-datepicker birthdate"
-																	value="01-01-1970" name="birthday"
-																	placeholder="DD-MM-YYYY" type="text">
-																<p style="display: none"
-																	class="alert alert-danger msg-birthday">Vui lòng
-																	nhập đúng định dạng. Ví dụ: 12-12-2002</p>
-															</div>
-														</div><!-- wd-200 -->
-													</div>
-												</div>
-
-											</div>
-											<div class="mb-4 main-content-label">THÔNG TIN LIÊN LẠC</div>
-											<div class="form-group ">
-												<div class="row">
-
-													<div class="col-md-12">
-														<input type="text" class="form-control" name="address1"
-															placeholder="Địa chỉ" value="">
-													</div>
-												</div>
-											</div>
-
-											<div class="form-group ">
-												<div class="row">
-
-													<div class="col-md-12">
-														<select name="city" class="form-control select2">
-															<option value="Thành phố Hà Nội">Thành phố Hà Nội</option>
-															<option value="Tỉnh Hà Giang">Tỉnh Hà Giang</option>
-															<option value="Tỉnh Cao Bằng">Tỉnh Cao Bằng</option>
-															<option value="Tỉnh Bắc Kạn">Tỉnh Bắc Kạn</option>
-															<option value="Tỉnh Tuyên Quang">Tỉnh Tuyên Quang</option>
-															<option value="Tỉnh Lào Cai">Tỉnh Lào Cai</option>
-															<option value="Tỉnh Điện Biên">Tỉnh Điện Biên</option>
-															<option value="Tỉnh Lai Châu">Tỉnh Lai Châu</option>
-															<option value="Tỉnh Sơn La">Tỉnh Sơn La</option>
-															<option value="Tỉnh Yên Bái">Tỉnh Yên Bái</option>
-															<option value="Tỉnh Hoà Bình">Tỉnh Hoà Bình</option>
-															<option value="Tỉnh Thái Nguyên">Tỉnh Thái Nguyên</option>
-															<option value="Tỉnh Lạng Sơn">Tỉnh Lạng Sơn</option>
-															<option value="Tỉnh Quảng Ninh">Tỉnh Quảng Ninh</option>
-															<option value="Tỉnh Bắc Giang">Tỉnh Bắc Giang</option>
-															<option value="Tỉnh Phú Thọ">Tỉnh Phú Thọ</option>
-															<option value="Tỉnh Vĩnh Phúc">Tỉnh Vĩnh Phúc</option>
-															<option value="Tỉnh Bắc Ninh">Tỉnh Bắc Ninh</option>
-															<option value="Tỉnh Hải Dương">Tỉnh Hải Dương</option>
-															<option value="Thành phố Hải Phòng">Thành phố Hải Phòng
-															</option>
-															<option value="Tỉnh Hưng Yên">Tỉnh Hưng Yên</option>
-															<option value="Tỉnh Thái Bình">Tỉnh Thái Bình</option>
-															<option value="Tỉnh Hà Nam">Tỉnh Hà Nam</option>
-															<option value="Tỉnh Nam Định">Tỉnh Nam Định</option>
-															<option value="Tỉnh Ninh Bình">Tỉnh Ninh Bình</option>
-															<option value="Tỉnh Thanh Hóa">Tỉnh Thanh Hóa</option>
-															<option value="Tỉnh Nghệ An">Tỉnh Nghệ An</option>
-															<option value="Tỉnh Hà Tĩnh">Tỉnh Hà Tĩnh</option>
-															<option value="Tỉnh Quảng Bình">Tỉnh Quảng Bình</option>
-															<option value="Tỉnh Quảng Trị">Tỉnh Quảng Trị</option>
-															<option value="Tỉnh Thừa Thiên Huế">Tỉnh Thừa Thiên Huế
-															</option>
-															<option value="Thành phố Đà Nẵng">Thành phố Đà Nẵng</option>
-															<option value="Tỉnh Quảng Nam">Tỉnh Quảng Nam</option>
-															<option value="Tỉnh Quảng Ngãi">Tỉnh Quảng Ngãi</option>
-															<option value="Tỉnh Bình Định">Tỉnh Bình Định</option>
-															<option value="Tỉnh Phú Yên">Tỉnh Phú Yên</option>
-															<option value="Tỉnh Khánh Hòa">Tỉnh Khánh Hòa</option>
-															<option value="Tỉnh Ninh Thuận">Tỉnh Ninh Thuận</option>
-															<option value="Tỉnh Bình Thuận">Tỉnh Bình Thuận</option>
-															<option value="Tỉnh Kon Tum">Tỉnh Kon Tum</option>
-															<option value="Tỉnh Gia Lai">Tỉnh Gia Lai</option>
-															<option value="Tỉnh Đắk Lắk">Tỉnh Đắk Lắk</option>
-															<option value="Tỉnh Đắk Nông">Tỉnh Đắk Nông</option>
-															<option value="Tỉnh Lâm Đồng">Tỉnh Lâm Đồng</option>
-															<option value="Tỉnh Bình Phước">Tỉnh Bình Phước</option>
-															<option value="Tỉnh Tây Ninh">Tỉnh Tây Ninh</option>
-															<option value="Tỉnh Bình Dương">Tỉnh Bình Dương</option>
-															<option value="Tỉnh Đồng Nai">Tỉnh Đồng Nai</option>
-															<option value="Tỉnh Bà Rịa - Vũng Tàu">Tỉnh Bà Rịa - Vũng
-																Tàu</option>
-															<option value="Thành phố Hồ Chí Minh">Thành phố Hồ Chí Minh
-															</option>
-															<option value="Tỉnh Long An">Tỉnh Long An</option>
-															<option value="Tỉnh Tiền Giang">Tỉnh Tiền Giang</option>
-															<option value="Tỉnh Bến Tre">Tỉnh Bến Tre</option>
-															<option value="Tỉnh Trà Vinh">Tỉnh Trà Vinh</option>
-															<option value="Tỉnh Vĩnh Long">Tỉnh Vĩnh Long</option>
-															<option value="Tỉnh Đồng Tháp">Tỉnh Đồng Tháp</option>
-															<option value="Tỉnh An Giang">Tỉnh An Giang</option>
-															<option value="Tỉnh Kiên Giang">Tỉnh Kiên Giang</option>
-															<option value="Thành phố Cần Thơ">Thành phố Cần Thơ</option>
-															<option value="Tỉnh Hậu Giang">Tỉnh Hậu Giang</option>
-															<option value="Tỉnh Sóc Trăng">Tỉnh Sóc Trăng</option>
-															<option value="Tỉnh Bạc Liêu">Tỉnh Bạc Liêu</option>
-															<option value="Tỉnh Cà Mau">Tỉnh Cà Mau</option>
-														</select>
-
-													</div>
-												</div>
-											</div>
-											<div class="form-group ">
-												<div class="row">
-													<div class="col-md-12">
-														<input type="text" class="form-control" name="email"
-															placeholder="example@gmail.com" value="">
-													</div>
-													
 												</div>
 												
-											</div>
-											<div class="form-group">
-												<div class="row">
-													
-													<div class="col-md-12">
-														<input type="number" class="form-control" name="phone_number"
-															placeholder="Số điện thoại" value="">
+												<div class="form-group ">
+													<div class="row">
+
+														<div class="col-md-12">
+															<select name="gender" class="form-control select2">
+																<option selected value="0">Nam</option>
+																<option value="1">Nữ</option>
+																<option value="2">Khác</option>
+															</select>
+														</div>
 													</div>
 												</div>
-											</div>
-										</form>
+												<div class="form-group ">
+													<div class="row">
+
+														<div class="col-md-12">
+															<div class="row row-sm mg-b-20">
+																<div class="input-group col-md-4">
+																	<div class="input-group-prepend">
+																		<div class="input-group-text">
+																			<i class="fas fa-calendar-alt"></i>
+
+
+																		</div>
+																	</div>
+
+																	<input class="form-control fc-datepicker birthdate"
+																		value="01-01-1970" name="birthday"
+																		placeholder="DD-MM-YYYY" type="text">
+																	<p style="display: none"
+																		class="alert alert-danger msg-birthday">Vui lòng
+																		nhập đúng định dạng. Ví dụ: 12-12-2002</p>
+																</div>
+															</div><!-- wd-200 -->
+														</div>
+													</div>
+
+												</div>
+												<div class="mb-4 main-content-label">THÔNG TIN LIÊN LẠC</div>
+												<div class="form-group ">
+													<div class="row">
+
+														<div class="col-md-12">
+															<input type="text" class="form-control" name="address1"
+																placeholder="Địa chỉ" value="">
+														</div>
+													</div>
+												</div>
+
+												<div class="form-group ">
+													<div class="row">
+
+														<div class="col-md-12">
+															<select name="city" class="form-control select2">
+																<option value="Thành phố Hà Nội">Thành phố Hà Nội</option>
+																<option value="Tỉnh Hà Giang">Tỉnh Hà Giang</option>
+																<option value="Tỉnh Cao Bằng">Tỉnh Cao Bằng</option>
+																<option value="Tỉnh Bắc Kạn">Tỉnh Bắc Kạn</option>
+																<option value="Tỉnh Tuyên Quang">Tỉnh Tuyên Quang</option>
+																<option value="Tỉnh Lào Cai">Tỉnh Lào Cai</option>
+																<option value="Tỉnh Điện Biên">Tỉnh Điện Biên</option>
+																<option value="Tỉnh Lai Châu">Tỉnh Lai Châu</option>
+																<option value="Tỉnh Sơn La">Tỉnh Sơn La</option>
+																<option value="Tỉnh Yên Bái">Tỉnh Yên Bái</option>
+																<option value="Tỉnh Hoà Bình">Tỉnh Hoà Bình</option>
+																<option value="Tỉnh Thái Nguyên">Tỉnh Thái Nguyên</option>
+																<option value="Tỉnh Lạng Sơn">Tỉnh Lạng Sơn</option>
+																<option value="Tỉnh Quảng Ninh">Tỉnh Quảng Ninh</option>
+																<option value="Tỉnh Bắc Giang">Tỉnh Bắc Giang</option>
+																<option value="Tỉnh Phú Thọ">Tỉnh Phú Thọ</option>
+																<option value="Tỉnh Vĩnh Phúc">Tỉnh Vĩnh Phúc</option>
+																<option value="Tỉnh Bắc Ninh">Tỉnh Bắc Ninh</option>
+																<option value="Tỉnh Hải Dương">Tỉnh Hải Dương</option>
+																<option value="Thành phố Hải Phòng">Thành phố Hải Phòng
+																</option>
+																<option value="Tỉnh Hưng Yên">Tỉnh Hưng Yên</option>
+																<option value="Tỉnh Thái Bình">Tỉnh Thái Bình</option>
+																<option value="Tỉnh Hà Nam">Tỉnh Hà Nam</option>
+																<option value="Tỉnh Nam Định">Tỉnh Nam Định</option>
+																<option value="Tỉnh Ninh Bình">Tỉnh Ninh Bình</option>
+																<option value="Tỉnh Thanh Hóa">Tỉnh Thanh Hóa</option>
+																<option value="Tỉnh Nghệ An">Tỉnh Nghệ An</option>
+																<option value="Tỉnh Hà Tĩnh">Tỉnh Hà Tĩnh</option>
+																<option value="Tỉnh Quảng Bình">Tỉnh Quảng Bình</option>
+																<option value="Tỉnh Quảng Trị">Tỉnh Quảng Trị</option>
+																<option value="Tỉnh Thừa Thiên Huế">Tỉnh Thừa Thiên Huế
+																</option>
+																<option value="Thành phố Đà Nẵng">Thành phố Đà Nẵng</option>
+																<option value="Tỉnh Quảng Nam">Tỉnh Quảng Nam</option>
+																<option value="Tỉnh Quảng Ngãi">Tỉnh Quảng Ngãi</option>
+																<option value="Tỉnh Bình Định">Tỉnh Bình Định</option>
+																<option value="Tỉnh Phú Yên">Tỉnh Phú Yên</option>
+																<option value="Tỉnh Khánh Hòa">Tỉnh Khánh Hòa</option>
+																<option value="Tỉnh Ninh Thuận">Tỉnh Ninh Thuận</option>
+																<option value="Tỉnh Bình Thuận">Tỉnh Bình Thuận</option>
+																<option value="Tỉnh Kon Tum">Tỉnh Kon Tum</option>
+																<option value="Tỉnh Gia Lai">Tỉnh Gia Lai</option>
+																<option value="Tỉnh Đắk Lắk">Tỉnh Đắk Lắk</option>
+																<option value="Tỉnh Đắk Nông">Tỉnh Đắk Nông</option>
+																<option value="Tỉnh Lâm Đồng">Tỉnh Lâm Đồng</option>
+																<option value="Tỉnh Bình Phước">Tỉnh Bình Phước</option>
+																<option value="Tỉnh Tây Ninh">Tỉnh Tây Ninh</option>
+																<option value="Tỉnh Bình Dương">Tỉnh Bình Dương</option>
+																<option value="Tỉnh Đồng Nai">Tỉnh Đồng Nai</option>
+																<option value="Tỉnh Bà Rịa - Vũng Tàu">Tỉnh Bà Rịa - Vũng
+																	Tàu</option>
+																<option value="Thành phố Hồ Chí Minh">Thành phố Hồ Chí Minh
+																</option>
+																<option value="Tỉnh Long An">Tỉnh Long An</option>
+																<option value="Tỉnh Tiền Giang">Tỉnh Tiền Giang</option>
+																<option value="Tỉnh Bến Tre">Tỉnh Bến Tre</option>
+																<option value="Tỉnh Trà Vinh">Tỉnh Trà Vinh</option>
+																<option value="Tỉnh Vĩnh Long">Tỉnh Vĩnh Long</option>
+																<option value="Tỉnh Đồng Tháp">Tỉnh Đồng Tháp</option>
+																<option value="Tỉnh An Giang">Tỉnh An Giang</option>
+																<option value="Tỉnh Kiên Giang">Tỉnh Kiên Giang</option>
+																<option value="Thành phố Cần Thơ">Thành phố Cần Thơ</option>
+																<option value="Tỉnh Hậu Giang">Tỉnh Hậu Giang</option>
+																<option value="Tỉnh Sóc Trăng">Tỉnh Sóc Trăng</option>
+																<option value="Tỉnh Bạc Liêu">Tỉnh Bạc Liêu</option>
+																<option value="Tỉnh Cà Mau">Tỉnh Cà Mau</option>
+															</select>
+
+														</div>
+													</div>
+												</div>
+												<div class="form-group ">
+													<div class="row">
+														<div class="col-md-12">
+															<input type="text" class="form-control" name="email"
+																placeholder="example@gmail.com" value="">
+														</div>
+														
+													</div>
+													
+												</div>
+												<div class="form-group">
+													<div class="row">
+														
+														<div class="col-md-12">
+															<input type="number" class="form-control" name="phone_number"
+																placeholder="Số điện thoại" value="">
+														</div>
+													</div>
+												</div>
+											</form>
+										</div>
 										<button type="submit" form="myProfile"
 											class="btn btn-primary waves-effect waves-light">Xác nhận</button>
 									</div>
@@ -573,28 +575,30 @@
 									</div>
 									<div class="tab-pane" id="settings">
 										<div class="mb-4 main-content-label">Đổi mật khẩu</div>
-										<form class="form-horizontal" role="form" method="post"
-											action="/change_password">
-											<input type="hidden" name="_token"
-												value="9CRxmKLNzjSPgU2OMwZGPGlU7RxqFNbzOhafUgRJ">
-											<div class="form-group">
-												<input type="password" name="old_password" class="form-control"
-													id="inputOldPass" placeholder="Mật khẩu hiện tại" required="">
-											</div>
-											<div class="form-group">
-												<input type="password" pattern=".{6,}" id="password" name="new_password"
-													class="form-control" placeholder="Mật khẩu mới" required="">
-											</div>
-											<div class="form-group">
-												<input type="password" class="form-control" id="confirm_password"
-													name="confirm_password" placeholder="Xác nhận mật khẩu" required="">
-											</div>
-											<div class="form-group mb-0 mt-3 justify-content-end">
-												<div>
-													<button type="submit" class="btn btn-primary">Xác nhận</button>
+										<div class="card card-body pd-20 pd-md-40 border shadow-none">
+											<form class="form-horizontal" role="form" method="post"
+												action="/change_password">
+												<input type="hidden" name="_token"
+													value="9CRxmKLNzjSPgU2OMwZGPGlU7RxqFNbzOhafUgRJ">
+												<div class="form-group">
+													<input type="password" name="old_password" class="form-control"
+														id="inputOldPass" placeholder="Mật khẩu hiện tại" required="">
 												</div>
-											</div>
-										</form>
+												<div class="form-group">
+													<input type="password" pattern=".{6,}" id="password" name="new_password"
+														class="form-control" placeholder="Mật khẩu mới" required="">
+												</div>
+												<div class="form-group">
+													<input type="password" class="form-control" id="confirm_password"
+														name="confirm_password" placeholder="Xác nhận mật khẩu" required="">
+												</div>
+												<div class="form-group mb-0 mt-3 justify-content-end">
+													<div>
+														<button type="submit" class="btn btn-primary">Xác nhận</button>
+													</div>
+												</div>
+											</form>
+										</div>
 									</div>
 								</div>
 							</div>
